@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Blog Application</title>
+</head>
+<body>
+
+ <%- include("partials/header.ejs") %>
+    <div class="blogdiv">
+        <div class="whitediv">
+            <h1 class="heading2">Welcome to <br>WebBlogger</h1>
+            <p class="para1">Start your journey by crafting captivating blogs. Share your insights, stories, and passions with the world. Simply enter your blog title, pour out your thoughts in the content field, and add any references you wish to include.</p>
+            <form action="/submit" class="form" method="POST">
+                <label for="name">Name</label>
+                <br>
+                <input type="text" placeholder="enter your name" name="name" required>
+                <br><br>
+                <label for="title">Title</label>
+                <br>
+                <input type="text" placeholder="enter the title of the blog" name="title" required>
+                <br><br>
+                <label for="content">Blog content</label>
+                <br>
+                <textarea id="content" placeholder="enter content for the blog" name="content" rows="8" cols="50"></textarea>
+
+                <br>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+        <div>
+          
+            <img src="https://i.pinimg.com/564x/41/c9/55/41c95543d0f617cb3af476c0c1b7440a.jpg" class="blueimg">
+            <h1 class="welcome">Unleash Your Voice!</h1>
+            <p class="para">Discover diverse blogs, create your own, and connect with fellow writers. Engage in lively discussions, stay updated with personalized feeds, and start your blogging journey today. Unleash your creativity and share your voice with the world on WebBlogger.</p>
+        </div>
+        
+    </div>
+    
+    <% if(locals.blog){ %>
+        <h1>your blogs</h1>
+        <% for(let i=0;i<blog.length;i++){ %>
+            <p>
+                <%= locals.blog[i]["name"] %>
+                <br>
+                <%= locals.blog[i]["title"] %>
+                <br>
+                <%= locals.blog[i]["content"] %>
+            </p>
+
+        <%# deletion operator %>
+        <form action="/delete" method="POST">
+            <input type="hidden" name="indexValue" value="<%= i %>">
+            <button>delete</button>
+
+        </form>
+        <%# edit operator %>
+        <form action="/edit" method="POST">
+            <input type="hidden" name="indexValue" value="<%= i %>">
+            <button>edit</button>
+
+        </form>
+        <% } %>
+        <% }else{ %>
+            <!-- <h1>no blogs yet</h1> -->
+        <% } %>
+       
+</body>
+</html>

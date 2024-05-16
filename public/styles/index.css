@@ -1,0 +1,112 @@
+/* Resetting default margin and padding for body and HTML */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+.header {
+    width: 100%;
+    height: 2.3rem;
+    background-color: #006769;
+    margin: 0;
+    display: flex;
+}
+
+.heading {
+    margin: 0;
+    font-size: 1.75rem;
+    margin-left: 2rem;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.web {
+    color: #9DDE8B;
+}
+
+.iconsdiv{
+    width: 500px;
+    justify-content: space-between;
+    margin-top:0.313rem ;
+    margin-left: 73.75rem;
+
+}
+.icons{
+    height: 1.5rem;
+    width: 1.5rem;
+    padding-right: 1.25rem;
+}
+
+/* Main blog part */
+.blogdiv {
+    padding-top: 1.875rem;
+    padding-left:5.7%;
+
+    height: 37.5rem;
+    background-color: #003C43;
+    display: flex;
+}
+.whitediv{
+    
+    width:42.5rem;
+    height: 34rem;
+    background-color: white;
+    border-radius: 25px 0px 0px 25px;
+}
+.blueimg{
+    margin-top: -4.25rem;
+    margin-left:4.25rem; ;
+    height:42.5rem;
+    width: 34rem;
+    border-radius: 1.563rem 1.563rem 0px 0px;
+    transform: rotate(90deg);
+
+}
+
+.heading2{
+    margin:0px;
+    padding-top: 1.25rem;
+    padding-left: 3rem;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+ 
+    font-size: 37px;
+
+
+}
+.para1{
+    width: 60%;
+    padding-left: 3rem;
+    color: #919193;
+}
+
+.welcome{
+    text-align: right;
+
+    color: white;
+    position: relative;
+    bottom:19.375rem;
+    left:2.4rem;
+    font-size: 2.5rem;
+}
+.para{
+   
+
+    text-align: right;
+
+    color: white;
+    position: relative;
+    bottom:20rem;
+    left:9.375rem;
+    font-size: 1.25rem;
+    width:31.25rem;
+}
+
+.form{
+    padding-left: 3rem;
+    font-size: 0.88rem;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
