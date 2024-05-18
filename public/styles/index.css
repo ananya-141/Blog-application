@@ -40,10 +40,10 @@ body, html {
 
 /* Main blog part */
 .blogdiv {
-    padding-top: 1.875rem;
+    padding-top: 2rem;
     padding-left:5.7%;
-
-    height: 37.5rem;
+    
+    height: 39.25rem;
     background-color: #003C43;
     display: flex;
 }
@@ -77,10 +77,38 @@ body, html {
 
 }
 .para1{
-    width: 60%;
+    width: 84.5%;
     padding-left: 3rem;
     color: #919193;
 }
+.inputdiv{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4rem;
+    margin-top:1.875rem ;
+   
+}
+.input{
+    width:250px;
+}
+
+.submitbutton {
+    width: 90%;
+    height: 2rem;
+    margin-top: 1rem;
+    background-color: #096064;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.submitbutton:hover {
+    transform: scale(1.03); /* Grow the button */
+    background-color: #0a777b; /* Change color on hover */
+    opacity: 0.8; /* Make the button slightly transparent */
+}
+
 
 .welcome{
     text-align: right;
