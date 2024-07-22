@@ -15,7 +15,7 @@ The user can then read the blogs and can even edit or delete the blogs
 
 ### Main Interface
 
-![Main Interface]((https://github.com/ananya-141/Blog-application/blob/master/5.png))
+![Main Interface](https://github.com/ananya-141/Blog-application/blob/master/5.png)
 
 *This screenshot shows the main interface of our application where users can manage their tasks.*
 
